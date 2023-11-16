@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multe-Step</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <!-- -----STEP-1 START---- -->
+
+        <div class="box_left">
+          <div class="step_1">
+            <div class="circle_1">1</div>
+            <div class="select_info">
+              <p>STEP 1</p>
+              <h3>YOUR INFO</h3>
+            </div>
+          </div>
+          <div class="step_1">
+            <div class="circle_1 circle_2">2</div>
+            <div class="select_info">
+              <p>STEP 2</p>
+              <h3>SELECT PLAN</h3>
+            </div>
+          </div>
+          <div class="step_1">
+            <div class="circle_1 circle_3">3</div>
+            <div class="select_info">
+              <p>STEP 3</p>
+              <h3>ADD-ONS</h3>
+            </div>
+          </div>
+          <div class="step_1">
+            <div class="circle_1 circle_4">4</div>
+            <div class="select_info">
+              <p>STEP 4</p>
+              <h3>SUMMARY</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box_right">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <form>
+            <div class="label">
+              <label for="name">Name</label>
+            </div>
+
+            <input type="text" id="name" placeholder="e.g. Stephen King " />
+
+            <div class="email">
+              <label for="email">Email Address</label>
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              placeholder=" e.g. stephenking@lorem.com  "
+            />
+            <div class="phone">
+              <label for="phone">Phone Number </label>
+            </div>
+            <input
+              type="text"
+              id="phone"
+              placeholder=" e.g. +1 234 567 890  "
+            />
+          </form>
+          <div class="btn">
+            <button>Next Step</button>
+          </div>
+        </div>
+
+        <!-- -----STEP-2 START---- -->
+        <section class="step_2">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+          <div class="three_box">
+            <input type="radio" name="name" id="arcade" />
+            <label for="arcade">
+              <div class="arcade_box">
+                <img src="./imges/icon-arcade.svg" alt="icon" />
+                <h3>Arcade</h3>
+                <p>$9/mo</p>
+              </div>
+            </label>
+            <input type="radio" name="name" id="advanced" />
+            <label for="advanced">
+              <div class="arcade_box">
+                <img src="./imges/icon-advanced.svg" alt="icon" />
+                <h3>Advanced</h3>
+                <p>$12/mo</p>
+              </div>
+            </label>
+            <input type="radio" name="name" id="pro" />
+            <label for="pro">
+              <div class="arcade_box">
+                <img src="./imges/icon-pro.svg" alt="icon" />
+                <h3>Pro</h3>
+                <p>$15/mo</p>
+              </div>
+            </label>
+          </div>
+          <div class="switcher">
+            <p class="Monthly">Monthly</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider rount"></span>
+            </label>
+            <p class="yearly">Yearly</p>
+          </div>
+          <div class="btns">
+            <button class="btn_Back">Go Back</button>
+            <button class="btn_Next">Next Step</button>
+          </div>
+        </section>
+
+        <!-- -----STEP-3 START---- -->
+
+        <section class="step_3">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+          <div class="check_box">
+            <input type="checkbox" id="online" />
+            <div class="discreption">
+              <label for="online"
+                >Online service
+                <p>Access to multiplayer games</p>
+              </label>
+            </div>
+            <p class="mo">+$1/mo</p>
+          </div>
+
+          <div class="check_box">
+            <input type="checkbox" id="Larger" />
+            <div class="discreption">
+              <label for="Larger"
+                >Larger storage
+                <p>Extra 1TB of cloud save</p>
+              </label>
+            </div>
+            <p class="mo">+$2/mo</p>
+          </div>
+
+          <div class="check_box">
+            <input type="checkbox" id="Customizable" />
+            <div class="discreption">
+              <label for="Customizable"
+                >Customizable Profile
+                <p>Custom theme on your profile</p>
+              </label>
+            </div>
+            <p class="mo">+$2/mo</p>
+          </div>
+          <div class="btns">
+            <button class="btn_Back btn_Back_3">Go Back</button>
+            <button class="btn_Next btn_Next_3">Next Step</button>
+          </div>
+        </section>
+        <!-- -----STEP-4 START---- -->
+        <section class="step_4">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+          <div class="Finishing_info">
+            <div class="change">
+              <h3>Arcade(Monthly)</h3>
+              <h3>+$9/mo</h3>
+            </div>
+            <a href="">change</a>
+            <div class="line"></div>
+            <div class="change">
+              <h3>Online service</h3>
+              <h3>+$1/mo</h3>
+            </div>
+            <div class="change">
+              <h3>Larger storage</h3>
+              <h3>+$2/mo</h3>
+            </div>
+          </div>
+          <div class="change">
+            <h3 class="Total">Total (per month/year)</h3>
+            <h3>+$9/mo</h3>
+          </div>
+          <div class="btns">
+            <button class="btn_Back btn_Back_4">Go Back</button>
+            <button class="btn_Next Confirm">Confirm</button>
+          </div>
+        </section>
+        <!-- -----STEP-5 START---- -->
+        <section class="step_5">
+          <img src="./imges/icon-thank-you.svg" alt="icon" />
+          <h1>Thank you!</h1>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
